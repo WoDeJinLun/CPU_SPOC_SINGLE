@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/constrs_1/imports/OExp02-IP2SOC/Org-Sword.xdc rfile:../../../CPU_SPOC.srcs/constrs_1/imports/OExp02-IP2SOC/Org-Sword.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/constrs_1/imports/OExp02-IP2SOC/Org-Sword.xdc rfile:../../../CPU_SPOC.srcs/constrs_1/imports/OExp02-IP2SOC/Org-Sword.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN AC18     [get_ports  clk_100mhz]
 set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]

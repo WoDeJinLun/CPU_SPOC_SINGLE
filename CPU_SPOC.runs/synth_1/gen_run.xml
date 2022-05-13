@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1651034941">
+<GenRun Id="synth_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1652422959">
   <File Type="PA-TCL" Name="CSSTE.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="CSSTE_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="CSSTE_reports.tcl"/>
@@ -13,7 +13,7 @@
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/Supplementary/Counter_x.edf">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/Counter_x.edf"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/Counter_x.edf"/>
         <Attr Name="ImportTime" Val="1615340655"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -21,7 +21,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Supplementary/SAnti_jitter.edf">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/SAnti_jitter.edf"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/SAnti_jitter.edf"/>
         <Attr Name="ImportTime" Val="1614665180"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -29,7 +29,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Supplementary/clk_div.edf">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/clk_div.edf"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/clk_div.edf"/>
         <Attr Name="ImportTime" Val="1646200966"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -37,7 +37,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Supplementary/SPIO.edf">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/SPIO.edf"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/SPIO.edf"/>
         <Attr Name="ImportTime" Val="1614665914"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -45,7 +45,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/SSeg7_Dev_0/SSeg7_Dev_0.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg7_Dev_0.xci"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg7_Dev_0.xci"/>
         <Attr Name="ImportTime" Val="1646207292"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -54,7 +54,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Supplementary/Multi_8CH32.edf">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/Multi_8CH32.edf"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/Multi_8CH32.edf"/>
         <Attr Name="ImportTime" Val="1614655043"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -62,7 +62,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Supplementary/MIO_BUS.edf">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/MIO_BUS.edf"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/MIO_BUS.edf"/>
         <Attr Name="ImportTime" Val="1614576975"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -70,15 +70,22 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Supplementary/RAM_B.edf">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/RAM_B.edf"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/RAM_B.edf"/>
         <Attr Name="ImportTime" Val="1646201682"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/ip/ROM_D_0/ROM_D_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/new/ALU.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../project4_cpu/project4_cpu.srcs/sources_1/new/ALU.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project4_cpu/project4_cpu.srcs/sources_1/new/ALU.v"/>
         <Attr Name="ImportTime" Val="1648887416"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -87,7 +94,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Supplementary/Counter_x.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/Counter_x.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/Counter_x.v"/>
         <Attr Name="ImportTime" Val="1615340629"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -96,7 +103,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/DataPath.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../project4_cpu/project4_cpu.srcs/sources_1/new/DataPath.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project4_cpu/project4_cpu.srcs/sources_1/new/DataPath.v"/>
         <Attr Name="ImportTime" Val="1649665912"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -105,7 +112,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/Hex2Ascii.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/IP/Supplementary/VGA/VGA.srcs/sources_1/new/Hex2Ascii.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/IP/Supplementary/VGA/VGA.srcs/sources_1/new/Hex2Ascii.v"/>
         <Attr Name="ImportTime" Val="1613819706"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -114,7 +121,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Supplementary/MIO_BUS.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/MIO_BUS.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/MIO_BUS.v"/>
         <Attr Name="ImportTime" Val="1614576941"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -123,7 +130,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Supplementary/Multi_8CH32.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/Multi_8CH32.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/Multi_8CH32.v"/>
         <Attr Name="ImportTime" Val="1614654974"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -132,7 +139,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/Mux_2to1_32bit.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../project4_cpu/project4_cpu.srcs/sources_1/new/Mux_2to1_32bit.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project4_cpu/project4_cpu.srcs/sources_1/new/Mux_2to1_32bit.v"/>
         <Attr Name="ImportTime" Val="1648465697"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -141,7 +148,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Supplementary/RAM_B.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/RAM_B.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/RAM_B.v"/>
         <Attr Name="ImportTime" Val="1646201661"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -150,7 +157,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/RegFile.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../project4_cpu/project4_cpu.srcs/sources_1/new/RegFile.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project4_cpu/project4_cpu.srcs/sources_1/new/RegFile.v"/>
         <Attr Name="ImportTime" Val="1648467087"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -159,7 +166,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Supplementary/SAnti_jitter.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/SAnti_jitter.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/SAnti_jitter.v"/>
         <Attr Name="ImportTime" Val="1614665114"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -168,7 +175,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Supplementary/SPIO.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/SPIO.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/SPIO.v"/>
         <Attr Name="ImportTime" Val="1614665862"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -177,7 +184,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/VGA.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/IP/Supplementary/VGA/VGA.srcs/sources_1/new/VGA.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/IP/Supplementary/VGA/VGA.srcs/sources_1/new/VGA.v"/>
         <Attr Name="ImportTime" Val="1613820752"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -186,7 +193,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/VgaController.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/IP/Supplementary/VGA/VGA.srcs/sources_1/new/VgaController.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/IP/Supplementary/VGA/VGA.srcs/sources_1/new/VgaController.v"/>
         <Attr Name="ImportTime" Val="1613819354"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -195,7 +202,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/VgaDebugger.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/IP/Supplementary/VGA/VGA.srcs/sources_1/new/VgaDebugger.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/IP/Supplementary/VGA/VGA.srcs/sources_1/new/VgaDebugger.v"/>
         <Attr Name="ImportTime" Val="1613819618"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -204,7 +211,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/VgaDisplay.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/IP/Supplementary/VGA/VGA.srcs/sources_1/new/VgaDisplay.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/IP/Supplementary/VGA/VGA.srcs/sources_1/new/VgaDisplay.v"/>
         <Attr Name="ImportTime" Val="1615359192"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -213,7 +220,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Supplementary/clk_div.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/clk_div.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/imports/Supplementary/clk_div.v"/>
         <Attr Name="ImportTime" Val="1646200926"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -229,7 +236,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/immGen.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../project4_cpu/project4_cpu.srcs/sources_1/new/immGen.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project4_cpu/project4_cpu.srcs/sources_1/new/immGen.v"/>
         <Attr Name="ImportTime" Val="1648887379"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -238,7 +245,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/scpu.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../project4_cpu/project4_cpu.srcs/sources_1/new/scpu.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project4_cpu/project4_cpu.srcs/sources_1/new/scpu.v"/>
         <Attr Name="ImportTime" Val="1648889901"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -247,8 +254,16 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/new/CSSTE.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v"/>
         <Attr Name="ImportTime" Val="1648889761"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Mux1023to32.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -265,7 +280,7 @@
     <File Path="$PSRCDIR/sources_1/imports/new/ctrl.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../project4_cpu/project4_cpu.srcs/sources_1/new/ctrl.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project4_cpu/project4_cpu.srcs/sources_1/new/ctrl.v"/>
         <Attr Name="ImportTime" Val="1649665793"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -275,7 +290,7 @@
     <File Path="$PSRCDIR/sources_1/imports/sources_1/ip/SSeg7_Dev_0/HexTo8SEG.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SSeg7_Dev_0/HexTo8SEG.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SSeg7_Dev_0/HexTo8SEG.v"/>
         <Attr Name="ImportTime" Val="1646207293"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -285,7 +300,7 @@
     <File Path="$PSRCDIR/sources_1/imports/sources_1/ip/SSeg7_Dev_0/MC14495_ZJU.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SSeg7_Dev_0/MC14495_ZJU.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SSeg7_Dev_0/MC14495_ZJU.v"/>
         <Attr Name="ImportTime" Val="1646207293"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -295,7 +310,7 @@
     <File Path="$PSRCDIR/sources_1/imports/sources_1/ip/SSeg7_Dev_0/MUX2T1_64.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SSeg7_Dev_0/MUX2T1_64.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SSeg7_Dev_0/MUX2T1_64.v"/>
         <Attr Name="ImportTime" Val="1646207293"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -305,7 +320,7 @@
     <File Path="$PSRCDIR/sources_1/imports/sources_1/ip/SSeg7_Dev_0/P2S.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SSeg7_Dev_0/P2S.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SSeg7_Dev_0/P2S.v"/>
         <Attr Name="ImportTime" Val="1646207293"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -315,7 +330,7 @@
     <File Path="$PSRCDIR/sources_1/imports/sources_1/ip/SSeg7_Dev_0/SSeg7_Dev.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg7_Dev.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg7_Dev.v"/>
         <Attr Name="ImportTime" Val="1646207293"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -325,7 +340,7 @@
     <File Path="$PSRCDIR/sources_1/imports/sources_1/ip/SSeg7_Dev_0/SSeg_map.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg_map.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg_map.v"/>
         <Attr Name="ImportTime" Val="1646207293"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -334,17 +349,17 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/ip/SSeg7_Dev_0/SSeg7_Dev_0.veo">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg7_Dev_0.veo"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg7_Dev_0.veo"/>
         <Attr Name="ImportTime" Val="1646207293"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/ip/SSeg7_Dev_0/SSeg7_Dev_0.vho">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg7_Dev_0.vho"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg7_Dev_0.vho"/>
         <Attr Name="ImportTime" Val="1646207293"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/I_mem.coe">
+    <File Path="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/I_mem.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -352,7 +367,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/vga_debugger.mem">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/IP/Supplementary/VGA/VGA.srcs/sources_1/new/vga_debugger.mem"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/IP/Supplementary/VGA/VGA.srcs/sources_1/new/vga_debugger.mem"/>
         <Attr Name="ImportTime" Val="1610696948"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -360,7 +375,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/font_8x16.mem">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/IP/Supplementary/VGA/VGA.srcs/sources_1/new/font_8x16.mem"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/IP/Supplementary/VGA/VGA.srcs/sources_1/new/font_8x16.mem"/>
         <Attr Name="ImportTime" Val="1610696882"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -372,7 +387,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/I_mem.coe">
+    <File Path="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/I_mem.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fib.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -388,7 +409,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/OExp02-IP2SOC/Org-Sword.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/constrs_1/imports/OExp02-IP2SOC/Org-Sword.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subjects/计组/Lab02 CPU实验环境搭建/Lab02 CPU实验环境搭建（老师版）/OExp02-IP2SOC/OExp02-IP2SOC.srcs/constrs_1/imports/OExp02-IP2SOC/Org-Sword.xdc"/>
         <Attr Name="ImportTime" Val="1614860519"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -402,5 +423,4 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ROM_D_0"/>
 </GenRun>

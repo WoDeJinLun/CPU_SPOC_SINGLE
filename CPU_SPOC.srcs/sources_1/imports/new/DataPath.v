@@ -41,16 +41,21 @@ module Data_path_more
     output[31:0]Data_out, //CPU数据输出
     output[31:0]PC_out, //PC指针输出
     output wire [1023:0] Reg_value,
-    output reg [31:0] mepc
+    output reg [31:0] mepc,
+    output reg state
 );
     parameter _supervisor = 1'b1, _user = 1'b0;
+    parameter _normal_ = 1'b0,_restore_ = 1'b1;
+//    reg state;
     // register file output line
     wire [31:0] rs1_data,rs2_data;
     // data to be write 
     wire [31:0] register_in;
     // 32 * 32 register file
-    RegFile cpu_regfile (.clk(clk),.rst(rst),.RegWrite(RegWrite),.Rs1_addr(inst_field[19:15]),
-    .Rs2_addr(inst_field[24:20]),.Wt_addr(inst_field[11:7]),.Wt_data(register_in),.Rs1_data(rs1_data),
+    reg [1023:0] dummy_stack;
+    RegFile cpu_regfile (.clk(clk),.rst(rst),.restore(state),.restore_data(dummy_stack),.RegWrite(RegWrite),.Rs1_addr(inst_field[19:15]),
+    .Rs2_addr(inst_field[24:20]),.Wt_addr(inst_field[11:7]),
+    .Wt_data(state?restore_data:register_in),.Rs1_data(rs1_data),
     .Rs2_data(rs2_data),.Reg_value(Reg_value));
     // imm signed extension
     wire [31:0] imm;
@@ -80,37 +85,45 @@ module Data_path_more
 //        .clk(clk),.reset(rst),.INT(INT),.ecall(ecall),.mepc(mepc),
 //        .mret(mret),.ill_instr(ill_instr),.pc_next(pc_in),.pc(pc_int)
 //    );
+    
     always@(posedge clk or posedge rst)begin
         if(rst==1'b1)begin
             pc <= 0;
             mepc <= 0;
-//            mode <= _user;
+            dummy_stack <= 0;
+            state <= _normal_;
         end
         else begin
-// INT 0X0C 
-// ECALL 0X08
-// ILLEGAL 0X04
+        if(state==_normal_)begin
         case(exc)
         4'b0001:begin 
-            mepc = pc + 32'h4 ;
-            pc = 32'h4;
+            dummy_stack <= Reg_value;
+            mepc <= pc + 32'h4 ;
+            pc <= 32'h4;
             
         end
         4'b0010:begin
-            pc = mepc;
+            state <= _restore_;
+            pc <= mepc;
         end
         4'b0100:begin
-            mepc = pc + 32'h4 ;
-            pc = 32'h8;
+            dummy_stack <= Reg_value;
+            mepc <= pc + 32'h4 ;
+            pc <= 32'h8;
         end
         4'b1000:begin
-            mepc = pc + 32'h4 ;
-            pc = 32'hC;
+            dummy_stack <= Reg_value;
+            mepc <= pc;
+            pc <= 32'hC;
         end
         default:begin
-            pc = pc_in;
+            pc <= pc_in;
         end
         endcase
+    end else begin
+        // restore
+        state <= _normal_;
+    end
     end
     end
     // control write data to the register file

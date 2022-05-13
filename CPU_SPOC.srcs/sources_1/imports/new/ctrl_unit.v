@@ -25,6 +25,7 @@ input [31:0] inst_field,
 //input[2:0]Fun3, //Function
 //input Fun7, //Function
 input MIO_ready, //CPU Wait
+input wire restore,
 output reg ecall,
 output reg ill_instr,
 output reg mret,
@@ -48,7 +49,13 @@ wire [2:0] Fun3 = inst_field[14:12];
 wire Fun7 = inst_field[30];
 
 always @* begin
-
+    if(restore==1)begin
+        ecall <=0;
+        ill_instr <= 0;
+        mret <= 0;
+        MemRW <= _Read;
+    end
+    else begin
     case(OPcode) 
     // r type signed 
        7'b0110011:begin
@@ -230,6 +237,7 @@ always @* begin
             MemRW = _Read;
         end 
     endcase
+    end
 end
 
 

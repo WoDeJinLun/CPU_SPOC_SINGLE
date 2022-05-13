@@ -44,6 +44,7 @@ module SCPU(
     wire Branch;
     wire BranchN;
     wire RegWrite;
+    wire restore;
     // wire MemRW;
     wire CPU_MIO;
     wire mret,ecall,ill_instr,INT;
@@ -52,13 +53,13 @@ module SCPU(
         check_int <= {check_int[0],out_io};
     end
     assign INT = (check_int == 2'b01);
-    SCPU_ctrl_more ctrl_unit (.inst_field(inst_in),.MIO_ready(MIO_ready)
+    SCPU_ctrl_more ctrl_unit (.inst_field(inst_in),.MIO_ready(MIO_ready),.restore(restore)
     ,.ImmSel(ImmSel),.ALUSrc_B(ALUSrc_B),.MemtoReg(MemtoReg),.Jump(Jump),.Branch(Branch),.BranchN(BranchN),.RegWrite(RegWrite),
     .MemRW(MemRW),.ALU_Control(ALU_Control),.CPU_MIO(CPU_MIO),.mret(mret),.ecall(ecall),.ill_instr(ill_instr));
     Data_path_more datapath_unit (.clk(clk),.rst(rst),.inst_field(inst_in),.ALUSrc_B(ALUSrc_B),.MemtoReg(MemtoReg),.Jump(Jump),.Branch(Branch),
     .BranchN(BranchN),.RegWrite(RegWrite),.Data_in(Data_in),.ALU_Control(ALU_Control),.ImmSel(ImmSel),.ALU_out(ALU_out),
     .Data_out(Data_out),.PC_out(PC_out),.Reg_value(Reg_value),.ecall(ecall),.ill_instr(ill_instr),
-    .mret(mret),.INT(INT),.mepc(mepc));
+    .mret(mret),.INT(INT),.mepc(mepc),.state(restore));
 
 endmodule
 

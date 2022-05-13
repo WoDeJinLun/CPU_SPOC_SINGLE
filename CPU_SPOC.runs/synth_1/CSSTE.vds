@@ -2,12 +2,12 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Wed Apr 27 12:49:03 2022
-# Process ID: 25272
-# Current directory: C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.runs/synth_1
+# Start of session at: Fri May 13 14:22:41 2022
+# Process ID: 7028
+# Current directory: C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.runs/synth_1
 # Command line: vivado.exe -log CSSTE.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CSSTE.tcl
-# Log file: C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.runs/synth_1/CSSTE.vds
-# Journal file: C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.runs/synth_1\vivado.jou
+# Log file: C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.runs/synth_1/CSSTE.vds
+# Journal file: C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source CSSTE.tcl -notrace
 Command: synth_design -top CSSTE -part xc7k160tffg676-2L
@@ -18,13 +18,13 @@ Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 26544 
+INFO: Helper process launched with PID 1524 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 375.859 ; gain = 96.188
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 376.746 ; gain = 100.938
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'CSSTE' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/sources_1/new/CSSTE.v:23]
-INFO: [Synth 8-638] synthesizing module 'SCPU' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/scpu.v:24]
-INFO: [Synth 8-638] synthesizing module 'SCPU_ctrl_more' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:22]
+INFO: [Synth 8-638] synthesizing module 'CSSTE' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/sources_1/new/CSSTE.v:23]
+INFO: [Synth 8-638] synthesizing module 'SCPU' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/scpu.v:24]
+INFO: [Synth 8-638] synthesizing module 'SCPU_ctrl_more' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:22]
 	Parameter _add bound to: 4'b0010 
 	Parameter _sub bound to: 4'b0110 
 	Parameter _sll bound to: 4'b1110 
@@ -48,95 +48,133 @@ INFO: [Synth 8-638] synthesizing module 'SCPU_ctrl_more' [C:/Users/86173/Documen
 	Parameter _Mem bound to: 1 - type: integer 
 	Parameter _PC bound to: 2 - type: integer 
 	Parameter _Imm_mem bound to: 3 - type: integer 
-WARNING: [Synth 8-151] case item 7'b1110011 is unreachable [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:52]
-WARNING: [Synth 8-3848] Net CPU_MIO in module/entity SCPU_ctrl_more does not have driver. [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:40]
-INFO: [Synth 8-256] done synthesizing module 'SCPU_ctrl_more' (1#1) [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:22]
-WARNING: [Synth 8-689] width (2) of port connection 'MemRW' does not match port width (1) of module 'SCPU_ctrl_more' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/scpu.v:57]
-INFO: [Synth 8-638] synthesizing module 'Data_path_more' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/DataPath.v:22]
-INFO: [Synth 8-638] synthesizing module 'RegFile' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/RegFile.v:22]
-INFO: [Synth 8-256] done synthesizing module 'RegFile' (2#1) [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/RegFile.v:22]
-INFO: [Synth 8-638] synthesizing module 'immGen' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/immGen.v:23]
-INFO: [Synth 8-256] done synthesizing module 'immGen' (3#1) [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/immGen.v:23]
-INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/ALU.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/ALU.v:33]
-INFO: [Synth 8-256] done synthesizing module 'ALU' (4#1) [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/ALU.v:23]
-INFO: [Synth 8-638] synthesizing module 'Mux_2to1_32bit' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/Mux_2to1_32bit.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Mux_2to1_32bit' (5#1) [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/Mux_2to1_32bit.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Data_path_more' (6#1) [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/DataPath.v:22]
-INFO: [Synth 8-256] done synthesizing module 'SCPU' (7#1) [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/scpu.v:24]
-WARNING: [Synth 8-689] width (1) of port connection 'MemRW' does not match port width (2) of module 'SCPU' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/sources_1/new/CSSTE.v:74]
-INFO: [Synth 8-638] synthesizing module 'ROM_D_0' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.runs/synth_1/.Xil/Vivado-25272-DESKTOP-SOJGS7H/realtime/ROM_D_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'ROM_D_0' (8#1) [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.runs/synth_1/.Xil/Vivado-25272-DESKTOP-SOJGS7H/realtime/ROM_D_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'RAM_B' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/RAM_B.v:15]
-WARNING: [Synth 8-689] width (32) of port connection 'wea' does not match port width (1) of module 'RAM_B_bbox_0' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/sources_1/new/CSSTE.v:90]
-INFO: [Synth 8-638] synthesizing module 'MIO_BUS' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/MIO_BUS.v:15]
-WARNING: [Synth 8-689] width (32) of port connection 'data_ram_we' does not match port width (1) of module 'MIO_BUS_bbox_1' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/sources_1/new/CSSTE.v:106]
-INFO: [Synth 8-638] synthesizing module 'Multi_8CH32' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/Multi_8CH32.v:15]
-INFO: [Synth 8-638] synthesizing module 'SSeg7_Dev_0' [c:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/synth/SSeg7_Dev_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'SSeg7_Dev' [c:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg7_Dev.v:23]
-INFO: [Synth 8-638] synthesizing module 'MUX2T1_64' [c:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/MUX2T1_64.v:23]
-INFO: [Synth 8-256] done synthesizing module 'MUX2T1_64' (9#1) [c:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/MUX2T1_64.v:23]
-INFO: [Synth 8-638] synthesizing module 'P2S' [c:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/P2S.v:23]
+WARNING: [Synth 8-151] case item 7'b1110011 is unreachable [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:59]
+WARNING: [Synth 8-3848] Net CPU_MIO in module/entity SCPU_ctrl_more does not have driver. [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:41]
+INFO: [Synth 8-256] done synthesizing module 'SCPU_ctrl_more' (1#1) [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:22]
+WARNING: [Synth 8-689] width (2) of port connection 'MemRW' does not match port width (1) of module 'SCPU_ctrl_more' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/scpu.v:58]
+INFO: [Synth 8-638] synthesizing module 'Data_path_more' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/DataPath.v:22]
+	Parameter _supervisor bound to: 1'b1 
+	Parameter _user bound to: 1'b0 
+	Parameter _normal_ bound to: 1'b0 
+	Parameter _restore_ bound to: 1'b1 
+INFO: [Synth 8-638] synthesizing module 'RegFile' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/RegFile.v:22]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (2#1) [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/RegFile.v:22]
+INFO: [Synth 8-638] synthesizing module 'immGen' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/immGen.v:23]
+INFO: [Synth 8-256] done synthesizing module 'immGen' (3#1) [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/immGen.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ALU.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ALU.v:33]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (4#1) [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'Mux_2to1_32bit' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/Mux_2to1_32bit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Mux_2to1_32bit' (5#1) [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/Mux_2to1_32bit.v:23]
+WARNING: [Synth 8-3848] Net restore_data in module/entity Data_path_more does not have driver. [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/DataPath.v:58]
+INFO: [Synth 8-256] done synthesizing module 'Data_path_more' (6#1) [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/DataPath.v:22]
+INFO: [Synth 8-256] done synthesizing module 'SCPU' (7#1) [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/scpu.v:24]
+WARNING: [Synth 8-689] width (1) of port connection 'MemRW' does not match port width (2) of module 'SCPU' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/sources_1/new/CSSTE.v:74]
+INFO: [Synth 8-638] synthesizing module 'ROM_D_0' [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/ROM_D_0/synth/ROM_D_0.vhd:66]
+	Parameter C_FAMILY bound to: kintex7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 1024 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: ROM_D_0.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_12' declared at 'c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/ROM_D_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_12' [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/ROM_D_0/synth/ROM_D_0.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'ROM_D_0' (11#1) [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/ROM_D_0/synth/ROM_D_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'RAM_B' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/RAM_B.v:15]
+WARNING: [Synth 8-689] width (32) of port connection 'wea' does not match port width (1) of module 'RAM_B_bbox_0' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/sources_1/new/CSSTE.v:90]
+INFO: [Synth 8-638] synthesizing module 'MIO_BUS' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/MIO_BUS.v:15]
+WARNING: [Synth 8-689] width (32) of port connection 'data_ram_we' does not match port width (1) of module 'MIO_BUS_bbox_1' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/sources_1/new/CSSTE.v:106]
+INFO: [Synth 8-638] synthesizing module 'Multi_8CH32' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/Multi_8CH32.v:15]
+INFO: [Synth 8-638] synthesizing module 'SSeg7_Dev_0' [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/synth/SSeg7_Dev_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'SSeg7_Dev' [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg7_Dev.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX2T1_64' [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/MUX2T1_64.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX2T1_64' (12#1) [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/MUX2T1_64.v:23]
+INFO: [Synth 8-638] synthesizing module 'P2S' [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/P2S.v:23]
 	Parameter DATA_BITS bound to: 64 - type: integer 
 	Parameter DATA_COUNT_BITS bound to: 6 - type: integer 
 	Parameter S_IDLE bound to: 0 - type: integer 
 	Parameter S_TRAN bound to: 1 - type: integer 
 	Parameter S_CLKN bound to: 2 - type: integer 
 	Parameter S_DONE bound to: 3 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/P2S.v:63]
-WARNING: [Synth 8-5788] Register buffer_reg in module P2S is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/P2S.v:51]
-INFO: [Synth 8-256] done synthesizing module 'P2S' (10#1) [c:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/P2S.v:23]
-INFO: [Synth 8-638] synthesizing module 'HexTo8SEG' [c:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/HexTo8SEG.v:23]
-INFO: [Synth 8-638] synthesizing module 'Hex2Seg' [c:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/HexTo8SEG.v:43]
-INFO: [Synth 8-638] synthesizing module 'MC14495_ZJU' [c:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/MC14495_ZJU.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/P2S.v:63]
+WARNING: [Synth 8-5788] Register buffer_reg in module P2S is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/P2S.v:51]
+INFO: [Synth 8-256] done synthesizing module 'P2S' (13#1) [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/P2S.v:23]
+INFO: [Synth 8-638] synthesizing module 'HexTo8SEG' [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/HexTo8SEG.v:23]
+INFO: [Synth 8-638] synthesizing module 'Hex2Seg' [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/HexTo8SEG.v:43]
+INFO: [Synth 8-638] synthesizing module 'MC14495_ZJU' [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/MC14495_ZJU.v:23]
 INFO: [Synth 8-638] synthesizing module 'INV' [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22577]
-INFO: [Synth 8-256] done synthesizing module 'INV' (11#1) [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22577]
+INFO: [Synth 8-256] done synthesizing module 'INV' (14#1) [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22577]
 INFO: [Synth 8-638] synthesizing module 'AND4' [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:108]
-INFO: [Synth 8-256] done synthesizing module 'AND4' (12#1) [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:108]
+INFO: [Synth 8-256] done synthesizing module 'AND4' (15#1) [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:108]
 INFO: [Synth 8-638] synthesizing module 'OR4' [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30939]
-INFO: [Synth 8-256] done synthesizing module 'OR4' (13#1) [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30939]
+INFO: [Synth 8-256] done synthesizing module 'OR4' (16#1) [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30939]
 INFO: [Synth 8-638] synthesizing module 'AND3' [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:60]
-INFO: [Synth 8-256] done synthesizing module 'AND3' (14#1) [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:60]
+INFO: [Synth 8-256] done synthesizing module 'AND3' (17#1) [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:60]
 INFO: [Synth 8-638] synthesizing module 'OR3' [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30891]
-INFO: [Synth 8-256] done synthesizing module 'OR3' (15#1) [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30891]
+INFO: [Synth 8-256] done synthesizing module 'OR3' (18#1) [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30891]
 INFO: [Synth 8-638] synthesizing module 'AND2' [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:14]
-INFO: [Synth 8-256] done synthesizing module 'AND2' (16#1) [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:14]
+INFO: [Synth 8-256] done synthesizing module 'AND2' (19#1) [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:14]
 INFO: [Synth 8-638] synthesizing module 'OR2' [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30845]
-INFO: [Synth 8-256] done synthesizing module 'OR2' (17#1) [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30845]
-INFO: [Synth 8-256] done synthesizing module 'MC14495_ZJU' (18#1) [c:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/MC14495_ZJU.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Hex2Seg' (19#1) [c:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/HexTo8SEG.v:43]
-INFO: [Synth 8-256] done synthesizing module 'HexTo8SEG' (20#1) [c:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/HexTo8SEG.v:23]
-INFO: [Synth 8-638] synthesizing module 'SSeg_map' [c:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg_map.v:23]
-INFO: [Synth 8-256] done synthesizing module 'SSeg_map' (21#1) [c:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg_map.v:23]
-INFO: [Synth 8-256] done synthesizing module 'SSeg7_Dev' (22#1) [c:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg7_Dev.v:23]
-INFO: [Synth 8-256] done synthesizing module 'SSeg7_Dev_0' (23#1) [c:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/synth/SSeg7_Dev_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'SPIO' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/SPIO.v:15]
-WARNING: [Synth 8-350] instance 'U7' of module 'SPIO' requires 12 connections, but only 11 given [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/sources_1/new/CSSTE.v:148]
-INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/clk_div.v:15]
-INFO: [Synth 8-638] synthesizing module 'SAnti_jitter' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/SAnti_jitter.v:15]
-WARNING: [Synth 8-350] instance 'U9' of module 'SAnti_jitter' requires 13 connections, but only 8 given [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/sources_1/new/CSSTE.v:168]
-INFO: [Synth 8-638] synthesizing module 'Counter_x' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/Counter_x.v:15]
-INFO: [Synth 8-638] synthesizing module 'VGA' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:23]
-INFO: [Synth 8-638] synthesizing module 'VgaController' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VgaController.v:23]
+INFO: [Synth 8-256] done synthesizing module 'OR2' (20#1) [I:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30845]
+INFO: [Synth 8-256] done synthesizing module 'MC14495_ZJU' (21#1) [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/MC14495_ZJU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Hex2Seg' (22#1) [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/HexTo8SEG.v:43]
+INFO: [Synth 8-256] done synthesizing module 'HexTo8SEG' (23#1) [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/HexTo8SEG.v:23]
+INFO: [Synth 8-638] synthesizing module 'SSeg_map' [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg_map.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SSeg_map' (24#1) [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg_map.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SSeg7_Dev' (25#1) [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg7_Dev.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SSeg7_Dev_0' (26#1) [c:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/ip/SSeg7_Dev_0/synth/SSeg7_Dev_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'SPIO' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/SPIO.v:15]
+WARNING: [Synth 8-350] instance 'U7' of module 'SPIO' requires 12 connections, but only 11 given [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/sources_1/new/CSSTE.v:148]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/clk_div.v:15]
+INFO: [Synth 8-638] synthesizing module 'SAnti_jitter' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/SAnti_jitter.v:15]
+WARNING: [Synth 8-350] instance 'U9' of module 'SAnti_jitter' requires 13 connections, but only 8 given [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/sources_1/new/CSSTE.v:168]
+INFO: [Synth 8-638] synthesizing module 'Counter_x' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/Counter_x.v:15]
+INFO: [Synth 8-638] synthesizing module 'VGA' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:23]
+INFO: [Synth 8-638] synthesizing module 'VgaController' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VgaController.v:23]
 	Parameter HS_1 bound to: 96 - type: integer 
 	Parameter VS_1 bound to: 2 - type: integer 
 	Parameter HS_2 bound to: 147 - type: integer 
 	Parameter VS_2 bound to: 35 - type: integer 
 	Parameter WIDTH bound to: 640 - type: integer 
 	Parameter HEIGHT bound to: 480 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'VgaController' (24#1) [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VgaController.v:23]
-INFO: [Synth 8-638] synthesizing module 'VgaDisplay' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VgaDisplay.v:23]
-INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VgaDisplay.v:36]
-INFO: [Synth 8-3876] $readmem data file 'C://Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/vga_debugger.mem' is read successfully [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VgaDisplay.v:37]
-INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VgaDisplay.v:46]
-INFO: [Synth 8-3876] $readmem data file 'C://Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/font_8x16.mem' is read successfully [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VgaDisplay.v:47]
-INFO: [Synth 8-256] done synthesizing module 'VgaDisplay' (25#1) [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VgaDisplay.v:23]
-INFO: [Synth 8-638] synthesizing module 'VgaDebugger' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VgaDebugger.v:23]
-INFO: [Synth 8-638] synthesizing module 'Hex2Ascii' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/Hex2Ascii.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Hex2Ascii' (26#1) [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/Hex2Ascii.v:23]
-INFO: [Synth 8-256] done synthesizing module 'VgaDebugger' (27#1) [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VgaDebugger.v:23]
-INFO: [Synth 8-256] done synthesizing module 'VGA' (28#1) [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:23]
-INFO: [Synth 8-256] done synthesizing module 'CSSTE' (29#1) [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/sources_1/new/CSSTE.v:23]
+INFO: [Synth 8-256] done synthesizing module 'VgaController' (27#1) [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VgaController.v:23]
+INFO: [Synth 8-638] synthesizing module 'VgaDisplay' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VgaDisplay.v:23]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VgaDisplay.v:36]
+INFO: [Synth 8-3876] $readmem data file 'C://Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/vga_debugger.mem' is read successfully [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VgaDisplay.v:37]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VgaDisplay.v:46]
+INFO: [Synth 8-3876] $readmem data file 'C://Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/font_8x16.mem' is read successfully [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VgaDisplay.v:47]
+INFO: [Synth 8-256] done synthesizing module 'VgaDisplay' (28#1) [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VgaDisplay.v:23]
+INFO: [Synth 8-638] synthesizing module 'VgaDebugger' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VgaDebugger.v:23]
+INFO: [Synth 8-638] synthesizing module 'Hex2Ascii' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/Hex2Ascii.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Hex2Ascii' (29#1) [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/Hex2Ascii.v:23]
+INFO: [Synth 8-256] done synthesizing module 'VgaDebugger' (30#1) [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VgaDebugger.v:23]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (31#1) [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:23]
+INFO: [Synth 8-256] done synthesizing module 'CSSTE' (32#1) [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/sources_1/new/CSSTE.v:23]
 WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[63]
 WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[62]
 WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[61]
@@ -169,37 +207,77 @@ WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[35]
 WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[34]
 WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[33]
 WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[32]
-WARNING: [Synth 8-3331] design immGen has unconnected port inst_field[6]
-WARNING: [Synth 8-3331] design immGen has unconnected port inst_field[5]
-WARNING: [Synth 8-3331] design immGen has unconnected port inst_field[4]
-WARNING: [Synth 8-3331] design immGen has unconnected port inst_field[3]
-WARNING: [Synth 8-3331] design immGen has unconnected port inst_field[2]
-WARNING: [Synth 8-3331] design immGen has unconnected port inst_field[1]
-WARNING: [Synth 8-3331] design immGen has unconnected port inst_field[0]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port CPU_MIO
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[31]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[29]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[28]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[27]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[26]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[25]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[24]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[23]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[22]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[20]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[19]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[18]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[17]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[16]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[15]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[11]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[10]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[9]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[8]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port inst_field[7]
-WARNING: [Synth 8-3331] design SCPU_ctrl_more has unconnected port MIO_ready
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[31]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[30]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[29]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[28]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[27]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[26]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[25]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[24]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[23]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[22]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[21]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[20]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[19]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[18]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[17]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[16]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[15]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[14]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[13]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[12]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[11]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[10]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[9]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[8]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[7]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[6]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[5]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[4]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[3]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[2]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[1]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[0]
+WARNING: [Synth 8-3331] design rom has unconnected port clk
+WARNING: [Synth 8-3331] design rom has unconnected port qspo_ce
+WARNING: [Synth 8-3331] design rom has unconnected port qspo_rst
+WARNING: [Synth 8-3331] design rom has unconnected port qspo_srst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[31]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[30]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[29]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[28]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[27]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[26]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[25]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[24]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[23]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[22]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[21]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[20]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[19]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[18]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[17]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[16]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[8]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[7]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[6]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_synth has unconnected port dpo[0]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 434.113 ; gain = 154.441
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 466.242 ; gain = 190.434
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -208,109 +286,109 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1[4] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1[3] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1[2] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1[1] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1[0] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[31] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[30] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[29] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[28] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[27] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[26] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[25] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[24] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[23] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[22] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[21] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[20] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[19] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[18] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[17] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[16] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[15] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[14] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[13] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[12] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[11] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[10] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[9] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[8] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[7] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[6] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[5] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[4] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[3] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[2] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[1] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[0] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2[4] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2[3] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2[2] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2[1] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2[0] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[31] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[30] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[29] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[28] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[27] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[26] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[25] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[24] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[23] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[22] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[21] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[20] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[19] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[18] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[17] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[16] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[15] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[14] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[13] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[12] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[11] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[10] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[9] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[8] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[7] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[6] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[5] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[4] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[3] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[2] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[1] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[0] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rd[4] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rd[3] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rd[2] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rd[1] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rd[0] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[31] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[30] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[29] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[28] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[27] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[26] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[25] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[24] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[23] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[22] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[21] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[20] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[19] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[18] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[17] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[16] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[15] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[14] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[13] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[12] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
-WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[11] to constant 0 [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1[4] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1[3] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1[2] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1[1] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1[0] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[31] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[30] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[29] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[28] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[27] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[26] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[25] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[24] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[23] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[22] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[21] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[20] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[19] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[18] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[17] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[16] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[15] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[14] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[13] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[12] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[11] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[10] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[9] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[8] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[7] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[6] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[5] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[4] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[3] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[2] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[1] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs1_val[0] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2[4] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2[3] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2[2] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2[1] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2[0] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[31] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[30] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[29] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[28] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[27] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[26] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[25] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[24] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[23] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[22] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[21] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[20] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[19] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[18] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[17] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[16] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[15] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[14] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[13] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[12] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[11] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[10] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[9] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[8] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[7] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[6] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[5] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[4] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[3] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[2] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[1] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rs2_val[0] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rd[4] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rd[3] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rd[2] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rd[1] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:rd[0] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[31] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[30] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[29] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[28] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[27] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[26] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[25] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[24] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[23] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[22] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[21] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[20] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[19] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[18] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[17] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[16] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[15] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[14] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[13] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[12] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:reg_i_data[11] to constant 0 [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/VGA.v:69]
 INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 434.113 ; gain = 154.441
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 466.242 ; gain = 190.434
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 320 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -319,14 +397,12 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.runs/synth_1/.Xil/Vivado-25272-DESKTOP-SOJGS7H/dcp1/ROM_D_0_in_context.xdc] for cell 'U2'
-Finished Parsing XDC File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.runs/synth_1/.Xil/Vivado-25272-DESKTOP-SOJGS7H/dcp1/ROM_D_0_in_context.xdc] for cell 'U2'
-Parsing XDC File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/constrs_1/imports/OExp02-IP2SOC/Org-Sword.xdc]
-Finished Parsing XDC File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/constrs_1/imports/OExp02-IP2SOC/Org-Sword.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/constrs_1/imports/OExp02-IP2SOC/Org-Sword.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CSSTE_propImpl.xdc].
+Parsing XDC File [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/constrs_1/imports/OExp02-IP2SOC/Org-Sword.xdc]
+Finished Parsing XDC File [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/constrs_1/imports/OExp02-IP2SOC/Org-Sword.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/constrs_1/imports/OExp02-IP2SOC/Org-Sword.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CSSTE_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/CSSTE_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -339,16 +415,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   OR3 => LUT3: 24 instances
   OR4 => LUT4: 32 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 804.293 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 813.977 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 804.293 ; gain = 524.621
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 813.977 ; gain = 538.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k160tffg676-2L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 804.293 ; gain = 524.621
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 813.977 ; gain = 538.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -356,15 +432,15 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for U2. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for U6. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 804.293 ; gain = 524.621
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 813.977 ; gain = 538.168
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "ill_instr0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "ill_instr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "MemRW" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5544] ROM "Branch" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "BranchN" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "Jump" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5587] ROM size for "ALUSrc_B" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-5587] ROM size for "MemRW" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5587] ROM size for "MemtoReg" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5544] ROM "ALU_Control" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "ImmSel" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -401,6 +477,7 @@ INFO: [Synth 8-5546] ROM "register_reg[29]" won't be mapped to RAM because it is
 INFO: [Synth 8-5546] ROM "register_reg[30]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "register_reg[31]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "mepc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "shift_count" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -408,18 +485,21 @@ INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address si
 INFO: [Synth 8-5546] ROM "v_count" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5547] Trying to map ROM "fonts_data" into Block RAM due to explicit "ram_style" or "rom_style" specification
 INFO: [Synth 8-5546] ROM "display_wen" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-327] inferring latch for variable 'ImmSel_reg' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:95]
-WARNING: [Synth 8-327] inferring latch for variable 'ALUSrc_B_reg' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:61]
-WARNING: [Synth 8-327] inferring latch for variable 'MemtoReg_reg' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:64]
-WARNING: [Synth 8-327] inferring latch for variable 'Jump_reg' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:60]
-WARNING: [Synth 8-327] inferring latch for variable 'Branch_reg' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:58]
-WARNING: [Synth 8-327] inferring latch for variable 'BranchN_reg' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:59]
-WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:63]
-WARNING: [Synth 8-327] inferring latch for variable 'MemRW_reg' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:62]
-WARNING: [Synth 8-327] inferring latch for variable 'ALU_Control_reg' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:66]
-WARNING: [Synth 8-327] inferring latch for variable 'C_reg' [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/new/ALU.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'ecall_reg' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'ill_instr_reg' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:54]
+WARNING: [Synth 8-327] inferring latch for variable 'mret_reg' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'ImmSel_reg' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:102]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrc_B_reg' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:68]
+WARNING: [Synth 8-327] inferring latch for variable 'MemtoReg_reg' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:71]
+WARNING: [Synth 8-327] inferring latch for variable 'Jump_reg' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:67]
+WARNING: [Synth 8-327] inferring latch for variable 'Branch_reg' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:65]
+WARNING: [Synth 8-327] inferring latch for variable 'BranchN_reg' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:66]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:70]
+WARNING: [Synth 8-327] inferring latch for variable 'MemRW_reg' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'ALU_Control_reg' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ctrl_unit.v:73]
+WARNING: [Synth 8-327] inferring latch for variable 'C_reg' [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/new/ALU.v:31]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 804.293 ; gain = 524.621
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 813.977 ; gain = 538.168
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -442,19 +522,20 @@ Detailed RTL Component Info :
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
+	             1024 Bit    Registers := 1     
 	               64 Bit    Registers := 1     
 	               32 Bit    Registers := 33    
 	               12 Bit    Registers := 1     
 	               10 Bit    Registers := 2     
 	                6 Bit    Registers := 1     
 	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 4     
+	                1 Bit    Registers := 5     
 +---Muxes : 
 	   2 Input     64 Bit        Muxes := 1     
 	   4 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 34    
 	   4 Input     32 Bit        Muxes := 2     
-	   5 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 2     
 	   2 Input     12 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 1     
@@ -469,8 +550,9 @@ Detailed RTL Component Info :
 	   5 Input      2 Bit        Muxes := 1     
 	  10 Input      1 Bit        Muxes := 15    
 	  11 Input      1 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 42    
+	   2 Input      1 Bit        Muxes := 73    
 	  12 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 5     
 	 449 Input      1 Bit        Muxes := 1     
@@ -498,7 +580,8 @@ Detailed RTL Component Info :
 +---Registers : 
 	               32 Bit    Registers := 31    
 +---Muxes : 
-	   2 Input      1 Bit        Muxes := 31    
+	   2 Input     32 Bit        Muxes := 31    
+	   2 Input      1 Bit        Muxes := 62    
 Module ALU 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -517,10 +600,13 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     32 Bit       Adders := 2     
 +---Registers : 
+	             1024 Bit    Registers := 1     
 	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
 +---Muxes : 
-	   5 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 1     
 Module SCPU 
 Detailed RTL Component Info : 
@@ -594,29 +680,56 @@ INFO: [Synth 8-5587] ROM size for "U1/ctrl_unit/MemRW" is below threshold of ROM
 INFO: [Synth 8-5546] ROM "U11/vga_controller/v_count" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
 INFO: [Synth 8-5546] ROM "U11/vga_debugger/display_wen" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-3331] design immGen has unconnected port inst_field[6]
-WARNING: [Synth 8-3331] design immGen has unconnected port inst_field[5]
-WARNING: [Synth 8-3331] design immGen has unconnected port inst_field[4]
-WARNING: [Synth 8-3331] design immGen has unconnected port inst_field[3]
-WARNING: [Synth 8-3331] design immGen has unconnected port inst_field[2]
-WARNING: [Synth 8-3331] design immGen has unconnected port inst_field[1]
-WARNING: [Synth 8-3331] design immGen has unconnected port inst_field[0]
 WARNING: [Synth 8-3463] Infeasible ramstyle = block set for RAM U11/vga_display/display_data_reg,trying to implement using LUTRAM
 WARNING: [Synth 8-3463] Infeasible ramstyle = block set for RAM U11/vga_display/display_data_reg,trying to implement using LUTRAM
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1023]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1022]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1021]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1020]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1019]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1018]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1017]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1016]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1015]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1014]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1013]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1012]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1011]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1010]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1009]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1008]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1007]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1006]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1005]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1004]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1003]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1002]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1001]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[1000]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[999]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[998]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[997]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[996]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[995]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[994]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[993]) is unused and will be removed from module Data_path_more.
+WARNING: [Synth 8-3332] Sequential element (dummy_stack_reg[992]) is unused and will be removed from module Data_path_more.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:39 ; elapsed = 00:01:41 . Memory (MB): peak = 817.770 ; gain = 538.098
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 813.977 ; gain = 538.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 ROM:
-+------------+------------+---------------+----------------+
-|Module Name | RTL Object | Depth x Width | Implemented As | 
-+------------+------------+---------------+----------------+
-|VgaDisplay  | p_0_out    | 4096x8        | LUT            | 
-|CSSTE       | p_0_out    | 4096x8        | LUT            | 
-+------------+------------+---------------+----------------+
++---------------------+--------------------------------------------------------+---------------+----------------+
+|Module Name          | RTL Object                                             | Depth x Width | Implemented As | 
++---------------------+--------------------------------------------------------+---------------+----------------+
+|rom                  | rom[1023]                                              | 1024x32       | LUT            | 
+|VgaDisplay           | p_0_out                                                | 4096x8        | LUT            | 
+|dist_mem_gen_v8_0_12 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[1023] | 1024x32       | LUT            | 
+|CSSTE                | p_0_out                                                | 4096x8        | LUT            | 
++---------------------+--------------------------------------------------------+---------------+----------------+
 
 
 Distributed RAM: Preliminary Mapping  Report (see note below)
@@ -640,13 +753,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:47 ; elapsed = 00:01:49 . Memory (MB): peak = 880.078 ; gain = 600.406
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 877.051 ; gain = 601.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:48 ; elapsed = 00:01:50 . Memory (MB): peak = 884.402 ; gain = 604.730
+Finished Timing Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 884.859 ; gain = 609.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -672,7 +785,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:51 ; elapsed = 00:01:52 . Memory (MB): peak = 953.145 ; gain = 673.473
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 953.699 ; gain = 677.891
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -696,7 +809,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:52 ; elapsed = 00:01:53 . Memory (MB): peak = 953.145 ; gain = 673.473
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 953.699 ; gain = 677.891
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -709,7 +822,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:52 ; elapsed = 00:01:54 . Memory (MB): peak = 953.145 ; gain = 673.473
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 953.699 ; gain = 677.891
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -721,25 +834,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:52 ; elapsed = 00:01:54 . Memory (MB): peak = 953.145 ; gain = 673.473
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 953.699 ; gain = 677.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:53 ; elapsed = 00:01:54 . Memory (MB): peak = 953.145 ; gain = 673.473
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 953.699 ; gain = 677.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:53 ; elapsed = 00:01:54 . Memory (MB): peak = 953.145 ; gain = 673.473
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 953.699 ; gain = 677.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:53 ; elapsed = 00:01:54 . Memory (MB): peak = 953.145 ; gain = 673.473
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 953.699 ; gain = 677.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -749,14 +862,13 @@ Report BlackBoxes:
 +------+--------------+----------+
 |      |BlackBox name |Instances |
 +------+--------------+----------+
-|1     |ROM_D_0       |         1|
-|2     |RAM_B         |         1|
-|3     |MIO_BUS       |         1|
-|4     |Multi_8CH32   |         1|
-|5     |SPIO          |         1|
-|6     |clk_div       |         1|
-|7     |SAnti_jitter  |         1|
-|8     |Counter_x     |         1|
+|1     |RAM_B         |         1|
+|2     |MIO_BUS       |         1|
+|3     |Multi_8CH32   |         1|
+|4     |SPIO          |         1|
+|5     |clk_div       |         1|
+|6     |SAnti_jitter  |         1|
+|7     |Counter_x     |         1|
 +------+--------------+----------+
 
 Report Cell Usage: 
@@ -767,105 +879,114 @@ Report Cell Usage:
 |2     |MIO_BUS_bbox_1      |     1|
 |3     |Multi_8CH32_bbox_2  |     1|
 |4     |RAM_B_bbox_0        |     1|
-|5     |ROM_D_0             |     1|
-|6     |SAnti_jitter_bbox_5 |     1|
-|7     |SPIO_bbox_3         |     1|
-|8     |clk_div_bbox_4      |     1|
-|9     |AND2                |     8|
-|10    |AND3                |    88|
-|11    |AND4                |    72|
-|12    |BUFG                |     2|
-|13    |CARRY4              |    51|
-|14    |INV                 |    40|
-|15    |LUT1                |     9|
-|16    |LUT2                |   188|
-|17    |LUT3                |    77|
-|18    |LUT4                |   147|
-|19    |LUT5                |   450|
-|20    |LUT6                |  2272|
-|21    |MUXF7               |   683|
-|22    |MUXF8               |   136|
-|23    |OR2                 |    56|
-|24    |OR3                 |    24|
-|25    |OR4                 |    32|
-|26    |RAM64M              |   128|
-|27    |RAM64X1D            |   128|
-|28    |FDCE                |  1066|
-|29    |FDRE                |   118|
-|30    |FDSE                |     2|
-|31    |LD                  |    48|
+|5     |SAnti_jitter_bbox_5 |     1|
+|6     |SPIO_bbox_3         |     1|
+|7     |clk_div_bbox_4      |     1|
+|8     |AND2                |     8|
+|9     |AND3                |    88|
+|10    |AND4                |    72|
+|11    |BUFG                |     3|
+|12    |CARRY4              |    51|
+|13    |INV                 |    40|
+|14    |LUT1                |    23|
+|15    |LUT2                |   173|
+|16    |LUT3                |  1091|
+|17    |LUT4                |   236|
+|18    |LUT5                |   514|
+|19    |LUT6                |  2303|
+|20    |MUXF7               |   671|
+|21    |MUXF8               |   137|
+|22    |OR2                 |    56|
+|23    |OR3                 |    24|
+|24    |OR4                 |    32|
+|25    |RAM64M              |   128|
+|26    |RAM64X1D            |   128|
+|27    |FDCE                |  2059|
+|28    |FDRE                |   116|
+|29    |FDSE                |     2|
+|30    |LD                  |    47|
+|31    |LDC                 |     4|
 |32    |IBUF                |    22|
 |33    |OBUF                |    22|
 +------+--------------------+------+
 
 Report Instance Areas: 
-+------+-------------------+---------------+------+
-|      |Instance           |Module         |Cells |
-+------+-------------------+---------------+------+
-|1     |top                |               |  6232|
-|2     |  U6               |SSeg7_Dev_0    |   483|
-|3     |    inst           |SSeg7_Dev      |   483|
-|4     |      M2           |P2S            |   154|
-|5     |      SM1          |HexTo8SEG      |   329|
-|6     |        HTS0       |Hex2Seg        |    41|
-|7     |          MSEG     |MC14495_ZJU_13 |    41|
-|8     |        HTS1       |Hex2Seg_0      |    41|
-|9     |          MSEG     |MC14495_ZJU_12 |    41|
-|10    |        HTS2       |Hex2Seg_1      |    41|
-|11    |          MSEG     |MC14495_ZJU_11 |    41|
-|12    |        HTS3       |Hex2Seg_2      |    41|
-|13    |          MSEG     |MC14495_ZJU_10 |    41|
-|14    |        HTS4       |Hex2Seg_3      |    41|
-|15    |          MSEG     |MC14495_ZJU_9  |    41|
-|16    |        HTS5       |Hex2Seg_4      |    41|
-|17    |          MSEG     |MC14495_ZJU_8  |    41|
-|18    |        HTS6       |Hex2Seg_5      |    41|
-|19    |          MSEG     |MC14495_ZJU_7  |    41|
-|20    |        HTS7       |Hex2Seg_6      |    42|
-|21    |          MSEG     |MC14495_ZJU    |    42|
-|22    |  U1               |SCPU           |  2866|
-|23    |    ctrl_unit      |SCPU_ctrl_more |   419|
-|24    |    datapath_unit  |Data_path_more |  2445|
-|25    |      cpu_alu      |ALU            |   121|
-|26    |      cpu_regfile  |RegFile        |  2222|
-|27    |  U11              |VGA            |  2471|
-|28    |    vga_controller |VgaController  |   813|
-|29    |    vga_debugger   |VgaDebugger    |  1083|
-|30    |    vga_display    |VgaDisplay     |   575|
-+------+-------------------+---------------+------+
++------+------------------------------------+---------------------------+------+
+|      |Instance                            |Module                     |Cells |
++------+------------------------------------+---------------------------+------+
+|1     |top                                 |                           |  8381|
+|2     |  U2                                |ROM_D_0                    |    87|
+|3     |    U0                              |dist_mem_gen_v8_0_12       |    87|
+|4     |      \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_12_synth |    87|
+|5     |        \gen_rom.rom_inst           |rom                        |    87|
+|6     |  U6                                |SSeg7_Dev_0                |   483|
+|7     |    inst                            |SSeg7_Dev                  |   483|
+|8     |      M2                            |P2S                        |   154|
+|9     |      SM1                           |HexTo8SEG                  |   329|
+|10    |        HTS0                        |Hex2Seg                    |    41|
+|11    |          MSEG                      |MC14495_ZJU_14             |    41|
+|12    |        HTS1                        |Hex2Seg_1                  |    41|
+|13    |          MSEG                      |MC14495_ZJU_13             |    41|
+|14    |        HTS2                        |Hex2Seg_2                  |    41|
+|15    |          MSEG                      |MC14495_ZJU_12             |    41|
+|16    |        HTS3                        |Hex2Seg_3                  |    41|
+|17    |          MSEG                      |MC14495_ZJU_11             |    41|
+|18    |        HTS4                        |Hex2Seg_4                  |    41|
+|19    |          MSEG                      |MC14495_ZJU_10             |    41|
+|20    |        HTS5                        |Hex2Seg_5                  |    41|
+|21    |          MSEG                      |MC14495_ZJU_9              |    41|
+|22    |        HTS6                        |Hex2Seg_6                  |    41|
+|23    |          MSEG                      |MC14495_ZJU_8              |    41|
+|24    |        HTS7                        |Hex2Seg_7                  |    42|
+|25    |          MSEG                      |MC14495_ZJU                |    42|
+|26    |  U1                                |SCPU                       |  4895|
+|27    |    ctrl_unit                       |SCPU_ctrl_more             |   402|
+|28    |    datapath_unit                   |Data_path_more             |  4490|
+|29    |      cpu_alu                       |ALU                        |    38|
+|30    |      cpu_imm                       |immGen                     |    26|
+|31    |      cpu_regfile                   |RegFile                    |  3249|
+|32    |      sel_jmp                       |Mux_2to1_32bit             |    47|
+|33    |      sel_reg_in                    |Mux_2to1_32bit_0           |    32|
+|34    |  U11                               |VGA                        |  2535|
+|35    |    vga_controller                  |VgaController              |   813|
+|36    |    vga_debugger                    |VgaDebugger                |  1147|
+|37    |    vga_display                     |VgaDisplay                 |   575|
++------+------------------------------------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:53 ; elapsed = 00:01:54 . Memory (MB): peak = 953.145 ; gain = 673.473
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 953.699 ; gain = 677.891
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:41 ; elapsed = 00:01:47 . Memory (MB): peak = 953.145 ; gain = 303.293
-Synthesis Optimization Complete : Time (s): cpu = 00:01:53 ; elapsed = 00:01:54 . Memory (MB): peak = 953.145 ; gain = 673.473
+Synthesis finished with 0 errors, 0 critical warnings and 234 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:02 . Memory (MB): peak = 953.699 ; gain = 330.156
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 953.699 ; gain = 677.891
 INFO: [Project 1-571] Translating synthesized netlist
-Parsing EDIF File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/RAM_B.edf]
-Finished Parsing EDIF File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/RAM_B.edf]
-Parsing EDIF File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/MIO_BUS.edf]
-Finished Parsing EDIF File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/MIO_BUS.edf]
-Parsing EDIF File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/Multi_8CH32.edf]
-Finished Parsing EDIF File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/Multi_8CH32.edf]
-Parsing EDIF File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/SPIO.edf]
-Finished Parsing EDIF File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/SPIO.edf]
-Parsing EDIF File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/clk_div.edf]
-Finished Parsing EDIF File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/clk_div.edf]
-Parsing EDIF File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/SAnti_jitter.edf]
-Finished Parsing EDIF File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/SAnti_jitter.edf]
-Parsing EDIF File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/Counter_x.edf]
-Finished Parsing EDIF File [C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.srcs/sources_1/imports/Supplementary/Counter_x.edf]
-INFO: [Netlist 29-17] Analyzing 1615 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Parsing EDIF File [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/RAM_B.edf]
+Finished Parsing EDIF File [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/RAM_B.edf]
+Parsing EDIF File [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/MIO_BUS.edf]
+Finished Parsing EDIF File [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/MIO_BUS.edf]
+Parsing EDIF File [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/Multi_8CH32.edf]
+Finished Parsing EDIF File [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/Multi_8CH32.edf]
+Parsing EDIF File [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/SPIO.edf]
+Finished Parsing EDIF File [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/SPIO.edf]
+Parsing EDIF File [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/clk_div.edf]
+Finished Parsing EDIF File [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/clk_div.edf]
+Parsing EDIF File [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/SAnti_jitter.edf]
+Finished Parsing EDIF File [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/SAnti_jitter.edf]
+Parsing EDIF File [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/Counter_x.edf]
+Finished Parsing EDIF File [C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.srcs/sources_1/imports/Supplementary/Counter_x.edf]
+INFO: [Netlist 29-17] Analyzing 1607 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2017.4
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 5 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 624 instances were transformed.
+  A total of 627 instances were transformed.
   AND2 => LUT2: 8 instances
   AND3 => LUT3: 88 instances
   AND4 => LUT4: 72 instances
   INV => LUT1: 40 instances
-  LD => LDCE: 48 instances
+  LD => LDCE: 47 instances
+  LDC => LDCE: 1 instances
+  LDC => LDCE (inverted pins: G): 3 instances
   OR2 => LUT2: 56 instances
   OR3 => LUT3: 24 instances
   OR4 => LUT4: 32 instances
@@ -873,10 +994,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 128 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-146 Infos, 189 Warnings, 0 Critical Warnings and 0 Errors encountered.
+149 Infos, 257 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:56 ; elapsed = 00:01:59 . Memory (MB): peak = 956.270 ; gain = 686.969
-INFO: [Common 17-1381] The checkpoint 'C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.runs/synth_1/CSSTE.dcp' has been generated.
+synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 953.699 ; gain = 684.227
+INFO: [Common 17-1381] The checkpoint 'C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.runs/synth_1/CSSTE.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file CSSTE_utilization_synth.rpt -pb CSSTE_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 956.270 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 27 12:51:07 2022...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 953.699 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri May 13 14:24:01 2022...

@@ -20,9 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module RegFile(
-    input wire clk,rst,RegWrite,
+    input wire clk,rst,RegWrite,restore,
     input wire [4:0] Rs1_addr,Rs2_addr,Wt_addr,
     input wire [31:0] Wt_data,
+    input wire [1023:0] restore_data,
     output  wire [31:0] Rs1_data,Rs2_data,
     output wire [1023:0] Reg_value
     );
@@ -37,7 +38,39 @@ module RegFile(
             for(i=1;i<32;i=i+1)begin
                 register[i] <= 0;
             end
-        end 
+        end else if(restore==1)begin
+        register[1]<=restore_data[991:960];
+        register[2]<=restore_data[959:928];
+        register[3]<=restore_data[927:896];
+        register[4]<=restore_data[895:864];
+        register[5]<=restore_data[863:832];
+        register[6]<=restore_data[831:800];
+        register[7]<=restore_data[799:768];
+        register[8]<=restore_data[767:736];
+        register[9]<=restore_data[735:704];
+        register[10]<=restore_data[703:672];
+        register[11]<=restore_data[671:640];
+        register[12]<=restore_data[639:608];
+        register[13]<=restore_data[607:576];
+        register[14]<=restore_data[575:544];
+        register[15]<=restore_data[543:512];
+        register[16]<=restore_data[511:480];
+        register[17]<=restore_data[479:448];
+        register[18]<=restore_data[447:416];
+        register[19]<=restore_data[415:384];
+        register[20]<=restore_data[383:352];
+        register[21]<=restore_data[351:320];
+        register[22]<=restore_data[319:288];
+        register[23]<=restore_data[287:256];
+        register[24]<=restore_data[255:224];
+        register[25]<=restore_data[223:192];
+        register[26]<=restore_data[191:160];
+        register[27]<=restore_data[159:128];
+        register[28]<=restore_data[127:96];
+        register[29]<=restore_data[95:64];
+        register[30]<=restore_data[63:32];
+        register[31]<=restore_data[31:0];
+        end
         else if((Wt_addr!=0)&&(RegWrite==1))begin
             register[Wt_addr]=Wt_data;        
         end

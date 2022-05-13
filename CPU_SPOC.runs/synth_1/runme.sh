@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/86173/Documents/code/vivado/CPU_SPOC/CPU_SPOC.runs/synth_1'
+HD_PWD='C:/Users/86173/Documents/code/vivado/single/CPU_SPOC_SINGLE/CPU_SPOC.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
